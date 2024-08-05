@@ -67,20 +67,20 @@
     "path": "apps/web-main/src/app/page.tsx",
     "content": {
       "structured": {
-        "description": "A React component using Next.js framework, rendering a web page with various elements including text, images and links. The page features a hero section with a gradient background, followed by a navigation menu and a grid layout displaying links to documentation, learning resources, templates and deployment options.",
+        "description": "A React component named \"Home\" that renders an ArchitectureDiagramPage component within a main element. The main element is styled using className with various properties such as flex layout, minimum height, padding, and justification. The ArchitectureDiagramPage component is imported from a components/page directory.",
         "items": [
           {
-            "id": "55015613-1572-11a8-b243-0ea33cabba5e",
+            "id": "410aaaf9-e30a-249a-154d-e66b4784d6c9",
             "ancestors": [],
-            "description": "Renders a main page with a gradient background, displaying information about Next.js and its features. It includes links to documentation, learning resources, templates, and deployment options. The page also showcases the Vercel logo and a Next.js logo.",
+            "description": "Renders a main HTML element with a flexible layout, centered vertically and horizontally, containing an `ArchitectureDiagramPage`. It is likely used as an entry point for a React application and serves as a container for other components.",
             "params": [],
             "returns": {
-              "type_name": "JSX.Element",
-              "description": "A DOM node that represents the content of the home page, including HTML elements such as divs, images, and links."
+              "type_name": "ReactElement",
+              "description": "A JSX element representing a main HTML element with specific attributes and children."
             },
             "usage": {
               "language": "typescript",
-              "code": "const app = (\n  <React.StrictMode>\n    <Home />\n  </React.StrictMode>\n);\n\nReactDOM.render(app, document.getElementById('root'));",
+              "code": "<Home />\n",
               "description": ""
             },
             "name": "Home",
@@ -92,7 +92,7 @@
               "comment": null
             },
             "item_type": "function",
-            "length": 111,
+            "length": 8,
             "docLength": null
           }
         ]
@@ -241,6 +241,110 @@
     "content": {
       "structured": {
         "description": "A shared configuration for Tailwind CSS. The configuration extends the theme with custom colors and background images. It also initializes plugins array, which is currently empty. The configuration does not include any content configurations, allowing each package to be responsible for its own content.",
+        "items": []
+      }
+    }
+  },
+  {
+    "name": "page.tsx",
+    "path": "apps/web-main/components/page.tsx",
+    "content": {
+      "structured": {
+        "description": "A system architecture diagram using the React Diagrams library. It creates a graph with multiple subgraphs representing different components of a system, including frontend, backend, data storage, and external services. The diagram uses nodes and links to represent relationships between these components, with custom colors and labels applied to each node and link.",
+        "items": [
+          {
+            "id": "f6d6bf68-8908-af8c-384e-76a0936aba88",
+            "ancestors": [],
+            "description": "Renders a React component, consisting of a heading \"System Architecture\" and a `<div>` element containing a `<CanvasWidget>`. The `CanvasWidget` receives an `engine` prop, which is not defined within the code snippet.",
+            "params": [],
+            "returns": {
+              "type_name": "JSX.Element",
+              "description": "A React component that represents a hierarchical view of the system architecture. The returned element consists of three child elements: an h1 heading and two div elements with specific styles and a CanvasWidget element inside one of them."
+            },
+            "usage": {
+              "language": "typescript",
+              "code": "const engine = new Engine();\n<ArchitectureDiagramPage engine={engine} />;\n",
+              "description": ""
+            },
+            "name": "ArchitectureDiagramPage",
+            "location": {
+              "start": 101,
+              "insert": 101,
+              "offset": " ",
+              "indent": 0,
+              "comment": null
+            },
+            "item_type": "function",
+            "length": 10,
+            "docLength": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "App.tsx",
+    "path": "packages/react-flow/my-react-flow-app/src/App.tsx",
+    "content": {
+      "structured": {
+        "description": "A React application using the `@xyflow/react` package for creating a flowchart editor. The app initializes with two nodes and one edge and provides controls for users to create new edges and modify existing ones.",
+        "items": [
+          {
+            "id": "db20ead5-1edb-f189-3745-5692044f9a86",
+            "ancestors": [],
+            "description": "Initializes state for nodes and edges using the `useNodesState` and `useEdgesState` hooks. It defines a callback to handle edge connections and renders a ReactFlow component, which is controlled by the node and edge states and callbacks.",
+            "params": [],
+            "returns": {
+              "type_name": "JSX.Element",
+              "description": "A React component that contains a nested ReactFlow element with nodes, edges, controls, mini map and background elements."
+            },
+            "usage": {
+              "language": "typescript",
+              "code": "const App = require('./App');\n\nconst nodes = [\n  { id: '1', type: 'input' },\n  { id: '2', type: 'output' }\n];\n\nconst edges = [];\n\nReactDom.render(<App initialNodes={nodes} initialEdges={edges}/>, document.getElementById('root'));",
+              "description": ""
+            },
+            "name": "App",
+            "location": {
+              "start": 21,
+              "insert": 21,
+              "offset": " ",
+              "indent": 0,
+              "comment": null
+            },
+            "item_type": "function",
+            "length": 25,
+            "docLength": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "main.tsx",
+    "path": "packages/react-flow/my-react-flow-app/src/main.tsx",
+    "content": {
+      "structured": {
+        "description": "And renders a React application using JSX syntax. It imports necessary modules from React and ReactDOM, then uses createRoot to render the App component in an element with the id \"root\". The App component is wrapped in a StrictMode component for development mode.",
+        "items": []
+      }
+    }
+  },
+  {
+    "name": "vite-env.d.ts",
+    "path": "packages/react-flow/my-react-flow-app/src/vite-env.d.ts",
+    "content": {
+      "structured": {
+        "description": "A Vite client configuration. It establishes dependencies for the project by referencing the `vite/client` type definitions. This allows the use of Vite's features and APIs in the project. The configuration enables the integration of Vite with the TypeScript compiler.",
+        "items": []
+      }
+    }
+  },
+  {
+    "name": "vite.config.ts",
+    "path": "packages/react-flow/my-react-flow-app/vite.config.ts",
+    "content": {
+      "structured": {
+        "description": "Vite configuration for a React application. It uses the `defineConfig` function from `vite` and the `react` plugin from `@vitejs/plugin-react-swc` to configure the build process. The `plugins` option is used to specify the plugins to be used during the build, in this case only the `react` plugin which enables React support for Vite.",
         "items": []
       }
     }
