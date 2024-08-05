@@ -9,8 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@projectstorm/react-canvas-core": "^7.0.3",
+    "@projectstorm/react-diagrams": "^7.0.4",
+    "@xyflow/react": "^12.0.4",
+    "beautiful-react-diagrams": "^0.5.1",
+    "gsap": "^3.12.5",
     "next": "14.2.5",
     "react": "^18",
+    "react-diagrams": "^1.0.1",
     "react-dom": "^18"
   },
   "devDependencies": {
