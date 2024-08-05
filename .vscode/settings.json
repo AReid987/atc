@@ -3,5 +3,11 @@
     {
       "mode": "auto"
     }
-  ]
+  ],
+  "WhiteSource Advise.Diff.BaseBranch": "main",
+  "tailwindCSS.experimental.configFile": {
+    "packages/tailwind-config/tailwind.config.js": "packages/tailwind-config/**",
+    "apps/project-showcase/tailwind.config.ts": "apps/project-showcase/**",
+    "apps/web-main/tailwind.config.ts": "apps/web-main/**"
+  },
 }

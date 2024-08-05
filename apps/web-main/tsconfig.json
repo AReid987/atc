@@ -1,0 +1,32 @@
+/**
+ * This is the start of the TypeScript configuration for the web-main application.
+ * The configuration includes settings for the TypeScript compiler, such as the
+ * target ECMAScript version, module system, and resolution, as well as
+ * additional settings for Next.js and path aliases.
+ */
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/**/*"],
+  "exclude": ["node_modules"]
+}

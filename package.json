@@ -5,15 +5,25 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
+    "type-check": "turbo type-check",
+    "clean": "turbo clean",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "prettier": "^3.2.5",
+    "eslint-plugin-mdx": "^3.1.5",
+    "prettier": "^3.3.3",
     "turbo": "^2.0.11",
-    "typescript": "^5.4.5"
+    "typescript": "^5.5.4"
   },
-  "packageManager": "pnpm@8.15.6",
+  "packageManager": "pnpm@9.6.0",
   "engines": {
     "node": ">=18"
+  },
+  "pnpm": {
+    "overrides": {
+      "ip@<1.1.9": ">=1.1.9",
+      "ip@=2.0.0": ">=2.0.1",
+      "braces@<3.0.3": ">=3.0.3"
+    }
   }
 }
