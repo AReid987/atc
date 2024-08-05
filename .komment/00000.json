@@ -1,0 +1,248 @@
+[
+  {
+    "name": ".eslintrc.js",
+    "path": "apps/project-showcase/.eslintrc.js",
+    "content": {
+      "structured": {
+        "description": "An ESLint configuration file that specifies settings for a Next.js project. It extends a previously defined configuration and sets the parser to \"@typescript-eslint/parser\", which allows for type-safe parsing of TypeScript files. The \"project\" option is enabled, indicating that the parser should consider the entire project's structure while parsing.",
+        "items": []
+      }
+    }
+  },
+  {
+    "name": "page.tsx",
+    "path": "apps/project-showcase/src/app/page.tsx",
+    "content": {
+      "structured": {
+        "description": "A Next.js application with a custom home page that displays a header section and a grid of links at the bottom. The code uses React components and CSS classes to style the layout and content. It also incorporates the \"next/image\" package for image rendering and Vercel's logo and icons.",
+        "items": [
+          {
+            "id": "bad09b1f-e145-e69a-d543-c10fc0e6c59c",
+            "ancestors": [],
+            "description": "Renders a main page for a Next.js application, featuring a gradient background, a call to action to edit a file, and links to documentation, learning resources, templates, and deployment options.",
+            "params": [],
+            "returns": {
+              "type_name": "JSX.Element",
+              "description": "A React component that represents a main section of the page containing various elements such as text, images, and links with gradient backgrounds and animations."
+            },
+            "usage": null,
+            "name": "Home",
+            "location": {
+              "start": 3,
+              "insert": 3,
+              "offset": " ",
+              "indent": 0,
+              "comment": null
+            },
+            "item_type": "function",
+            "length": 111,
+            "docLength": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "tailwind.config.ts",
+    "path": "apps/project-showcase/tailwind.config.ts",
+    "content": {
+      "structured": {
+        "description": "A Tailwind CSS configuration. It imports shared configuration from another package and merges it with local settings. The content option specifies the files that should be processed for classes and utilities, while presets allows overriding or extending base configurations.",
+        "items": []
+      }
+    }
+  },
+  {
+    "name": ".eslintrc.js",
+    "path": "apps/web-main/.eslintrc.js",
+    "content": {
+      "structured": {
+        "description": "An ESLint configuration file. It sets the root directory as true and extends a predefined config from a repository called \"@repo/eslint-config/next.js\". The parser is set to \"@typescript-eslint/parser\", which allows TypeScript syntax parsing, and project settings are enabled through the \"project\" option in parserOptions.",
+        "items": []
+      }
+    }
+  },
+  {
+    "name": "page.tsx",
+    "path": "apps/web-main/src/app/page.tsx",
+    "content": {
+      "structured": {
+        "description": "A React component using Next.js framework, rendering a web page with various elements including text, images and links. The page features a hero section with a gradient background, followed by a navigation menu and a grid layout displaying links to documentation, learning resources, templates and deployment options.",
+        "items": [
+          {
+            "id": "55015613-1572-11a8-b243-0ea33cabba5e",
+            "ancestors": [],
+            "description": "Renders a main page with a gradient background, displaying information about Next.js and its features. It includes links to documentation, learning resources, templates, and deployment options. The page also showcases the Vercel logo and a Next.js logo.",
+            "params": [],
+            "returns": {
+              "type_name": "JSX.Element",
+              "description": "A DOM node that represents the content of the home page, including HTML elements such as divs, images, and links."
+            },
+            "usage": {
+              "language": "typescript",
+              "code": "const app = (\n  <React.StrictMode>\n    <Home />\n  </React.StrictMode>\n);\n\nReactDOM.render(app, document.getElementById('root'));",
+              "description": ""
+            },
+            "name": "Home",
+            "location": {
+              "start": 3,
+              "insert": 3,
+              "offset": " ",
+              "indent": 0,
+              "comment": null
+            },
+            "item_type": "function",
+            "length": 111,
+            "docLength": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "tailwind.config.ts",
+    "path": "apps/web-main/tailwind.config.ts",
+    "content": {
+      "structured": {
+        "description": "A Tailwind CSS configuration. It imports a shared config from a separate file and extends it with additional content directories for the application's source code. The resulting config is then exported as the default config. This config is used by Tailwind to generate its CSS styles.",
+        "items": []
+      }
+    }
+  },
+  {
+    "name": "button.composition.tsx",
+    "path": "default-scope/ui/button/button.composition.tsx",
+    "content": {
+      "structured": {
+        "description": "and exports a basic React component named BasicButton. The component imports and utilizes Button components from the './button.js' file. When rendered, it displays a \"hello world!\" label wrapped in a Button element.",
+        "items": [
+          {
+            "id": "a9cf7102-868d-c697-b746-1171d092adb9",
+            "ancestors": [],
+            "description": "Renders a basic button with the text \"hello world!\". It returns JSX (JavaScript XML) that consists of a `<Button>` element, which is presumably defined elsewhere in the codebase. The exact behavior and styling of the button depend on the implementation of the `Button` component.",
+            "params": [],
+            "returns": {
+              "type_name": "ReactNode",
+              "description": "A JSX element, specifically a `<Button>` component with the text \"hello world!\" as its content."
+            },
+            "usage": {
+              "language": "typescript",
+              "code": "const App = () => {\n  return (\n    <div>\n      <BasicButton />\n    </div>\n  );\n};\n",
+              "description": "\nThis code renders a basic button with text \"hello world!\" within a div."
+            },
+            "name": "BasicButton",
+            "location": {
+              "start": 3,
+              "insert": 3,
+              "offset": " ",
+              "indent": 0,
+              "comment": null
+            },
+            "item_type": "function",
+            "length": 5,
+            "docLength": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "button.spec.tsx",
+    "path": "default-scope/ui/button/button.spec.tsx",
+    "content": {
+      "structured": {
+        "description": "A test case for a React component using Jest and React Testing Library. The test renders a BasicButton component and checks if it contains the text \"hello world!\". The render method from React Testing Library is used to render the component, and the getByText method is used to retrieve the element containing the specified text.",
+        "items": [
+          {
+            "id": "38a3ef97-95b4-9aba-b64c-6ec19453c2f8",
+            "ancestors": [],
+            "description": "Renders and tests UI component.",
+            "name": null,
+            "location": {
+              "start": 5,
+              "insert": 6,
+              "offset": " ",
+              "indent": 2,
+              "comment": null
+            },
+            "item_type": "higher_order_invocation",
+            "length": 5,
+            "docLength": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "button.tsx",
+    "path": "default-scope/ui/button/button.tsx",
+    "content": {
+      "structured": {
+        "description": "A reusable button component using React. The ButtonProps type specifies optional children properties that can be passed as ReactNode. The Button function receives these props and returns a div element containing the provided children. This allows for dynamic content rendering within the button component.",
+        "items": [
+          {
+            "id": "70342ef8-823f-2080-8044-1b3b8e0b4527",
+            "ancestors": [],
+            "description": "Takes a `children` prop, which can be any JSX element or text, and returns a `div` container with that content. This allows developers to create reusable button components with varying content.",
+            "params": [
+              {
+                "name": "obj",
+                "default_value": null,
+                "optional": false,
+                "type_name": "object",
+                "description": "Destructured to extract its key-value pair, where the value is assigned to the variable `children`."
+              },
+              {
+                "name": "obj.children",
+                "default_value": null,
+                "optional": false,
+                "type_name": "ButtonProps",
+                "description": "Intended to hold content within the button."
+              }
+            ],
+            "returns": {
+              "type_name": "ReactNode",
+              "description": "Wrapped inside a `<div>` element."
+            },
+            "usage": {
+              "language": "typescript",
+              "code": "<Button>Hello, World!</Button>\n",
+              "description": ""
+            },
+            "name": "Button",
+            "location": {
+              "start": 10,
+              "insert": 10,
+              "offset": " ",
+              "indent": 0,
+              "comment": null
+            },
+            "item_type": "function",
+            "length": 7,
+            "docLength": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "index.ts",
+    "path": "default-scope/ui/button/index.ts",
+    "content": {
+      "structured": {
+        "description": "And exports two entities: Button and ButtonProps. It appears that Button is a UI component while ButtonProps represents its properties. The export statement makes these entities accessible to other parts of the application or library.",
+        "items": []
+      }
+    }
+  },
+  {
+    "name": "tailwind.config.ts",
+    "path": "packages/tailwind-config/tailwind.config.ts",
+    "content": {
+      "structured": {
+        "description": "A shared configuration for Tailwind CSS. The configuration extends the theme with custom colors and background images. It also initializes plugins array, which is currently empty. The configuration does not include any content configurations, allowing each package to be responsible for its own content.",
+        "items": []
+      }
+    }
+  }
+]

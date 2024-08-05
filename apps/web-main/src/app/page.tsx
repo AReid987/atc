@@ -1,5 +1,14 @@
 import Image from "next/image";
 
+/**
+ * @description Renders a main page with a gradient background, displaying information
+ * about Next.js and its features. It includes links to documentation, learning
+ * resources, templates, and deployment options. The page also showcases the Vercel
+ * logo and a Next.js logo.
+ * 
+ * @returns {JSX.Element} A DOM node that represents the content of the home page,
+ * including HTML elements such as divs, images, and links.
+ */
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
