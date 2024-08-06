@@ -8,7 +8,8 @@
     "lint": "turbo lint",
     "type-check": "turbo type-check",
     "clean": "turbo clean",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "vercel-build": "turbo run build --filter=./apps/*"
   },
   "devDependencies": {
     "eslint-plugin-mdx": "^3.1.5",
@@ -26,5 +27,8 @@
       "ip@=2.0.0": ">=2.0.1",
       "braces@<3.0.3": ">=3.0.3"
     }
+  },
+  "dependencies": {
+    "next": "^14.2.5"
   }
 }
