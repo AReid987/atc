@@ -348,5 +348,274 @@
         "items": []
       }
     }
+  },
+  {
+    "name": "button.composition.tsx",
+    "path": "default/button/button.composition.tsx",
+    "content": {
+      "structured": {
+        "description": "a React component called BasicButton, which renders a button with the text \"hello world!\". The Button component is imported from a separate module named './button.js'. The export statement makes the BasicButton component available for use elsewhere in the application.",
+        "items": [
+          {
+            "id": "1bf041e9-1297-20bd-c944-37d925e6b99f",
+            "ancestors": [],
+            "description": "Returns a React element that represents a button with the text \"hello world!\". When rendered, it will display a clickable button with the specified text to the user.",
+            "params": [],
+            "returns": {
+              "type_name": "JSX.Element",
+              "description": "A React element representing a Button component with the text \"hello world!\"."
+            },
+            "usage": {
+              "language": "typescript",
+              "code": "<BasicButton />\n",
+              "description": ""
+            },
+            "name": "BasicButton",
+            "location": {
+              "start": 3,
+              "insert": 3,
+              "offset": " ",
+              "indent": 0,
+              "comment": null
+            },
+            "item_type": "function",
+            "length": 5,
+            "docLength": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "button.spec.tsx",
+    "path": "default/button/button.spec.tsx",
+    "content": {
+      "structured": {
+        "description": "An integration test using React and Jest testing library. It renders a basic button component and checks if it contains the expected text 'hello world!'. The component is rendered using `render` function from '@testing-library/react' package, which returns an object containing methods for querying and retrieving elements within the rendered tree.",
+        "items": [
+          {
+            "id": "a04ee10f-7347-7787-0847-d2381fab2465",
+            "ancestors": [],
+            "description": "Renders and tests a button component.",
+            "name": null,
+            "location": {
+              "start": 5,
+              "insert": 6,
+              "offset": " ",
+              "indent": 2,
+              "comment": null
+            },
+            "item_type": "higher_order_invocation",
+            "length": 5,
+            "docLength": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "button.tsx",
+    "path": "default/button/button.tsx",
+    "content": {
+      "structured": {
+        "description": "A React component named \"Button\". It accepts a \"children\" prop of type \"ReactNode\", allowing it to render any React node within itself. The Button component returns a div element that contains its children.",
+        "items": [
+          {
+            "id": "d6a5b269-becf-3293-d741-4e2e2bd948a4",
+            "ancestors": [],
+            "description": "Receives a set of props, specifically a `children` prop, and returns an HTML element with its content set to the value of `children`. The returned element is wrapped within a `<div>` tag.",
+            "params": [
+              {
+                "name": "obj",
+                "default_value": null,
+                "optional": false,
+                "type_name": "object",
+                "description": "Destructured from an imported interface or type called `ButtonProps`. It expects an object with at least one property named `children`, which is expected to be passed as a prop to this component."
+              },
+              {
+                "name": "obj.children",
+                "default_value": null,
+                "optional": false,
+                "type_name": "ButtonProps",
+                "description": "Used to hold any content inside the button."
+              }
+            ],
+            "returns": {
+              "type_name": "ReactNode",
+              "description": "Wrapped in a div element. The returned value represents an HTML element that contains the children passed to it."
+            },
+            "usage": {
+              "language": "typescript",
+              "code": "<Button>Click me!</Button>\n",
+              "description": "\nThis will render the text \"Click me!\" within a div element."
+            },
+            "name": "Button",
+            "location": {
+              "start": 10,
+              "insert": 10,
+              "offset": " ",
+              "indent": 0,
+              "comment": null
+            },
+            "item_type": "function",
+            "length": 7,
+            "docLength": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "index.ts",
+    "path": "default/button/index.ts",
+    "content": {
+      "structured": {
+        "description": "And exports a `Button` component and its type from the `button.js` file. The `export` statements allow other modules to import and use these definitions. The code does not provide any implementation details for the `Button` component, only the interface definition.",
+        "items": []
+      }
+    }
+  },
+  {
+    "name": "enhanced-interactive-diagram.tsx",
+    "path": "diagrams/enhanced-interactive-diagram.tsx",
+    "content": {
+      "structured": {
+        "description": "An interactive architecture diagram component using React and Mermaid libraries. The component renders a graph defined by `diagramDefinition` and allows users to click on nodes, triggering the display of detailed information about the corresponding system component. The selected component's name and description are displayed in a tooltip-like div below the diagram.",
+        "items": [
+          {
+            "id": "c0a61afd-5661-6ab8-9144-02ca872ccfd6",
+            "ancestors": [],
+            "description": "Renders an interactive architecture diagram using Mermaid chart and displays information about selected components, including name and description.",
+            "params": [],
+            "returns": {
+              "type_name": "JSX.Element",
+              "description": "A React component. It consists of a div element that contains several child elements including an h2 heading, Mermaid chart, and optional div with selected component details."
+            },
+            "usage": {
+              "language": "typescript",
+              "code": "const diagram = <InteractiveArchitectureDiagram />;\n",
+              "description": ""
+            },
+            "name": "InteractiveArchitectureDiagram",
+            "location": {
+              "start": 15,
+              "insert": 15,
+              "offset": " ",
+              "indent": 0,
+              "comment": null
+            },
+            "item_type": "function",
+            "length": 25,
+            "docLength": null
+          },
+          {
+            "id": "ec14d297-28b6-9288-f345-134dde99266b",
+            "ancestors": [
+              "c0a61afd-5661-6ab8-9144-02ca872ccfd6"
+            ],
+            "description": "Sets the selected component to the one associated with the given `nodeId`. It retrieves the component information from an object `componentInfo` and updates the state of the application accordingly, allowing for dynamic rendering or processing of components based on user interaction.",
+            "params": [
+              {
+                "name": "nodeId",
+                "default_value": null,
+                "optional": false,
+                "type_name": "number",
+                "description": "Used to identify a node for selection."
+              }
+            ],
+            "usage": {
+              "language": "typescript",
+              "code": "const nodeId = '123';\nhandleNodeClick(nodeId);\n",
+              "description": ""
+            },
+            "name": "handleNodeClick",
+            "location": {
+              "start": 18,
+              "insert": 18,
+              "offset": " ",
+              "indent": 2,
+              "comment": null
+            },
+            "item_type": "function",
+            "length": 3,
+            "docLength": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "interactive-architecture-diagram.tsx",
+    "path": "diagrams/interactive-architecture-diagram.tsx",
+    "content": {
+      "structured": {
+        "description": "An interactive architecture diagram component using Mermaid and React. The diagram represents a system with frontend, backend, data storage, and external services components, illustrating their relationships. It uses Mermaid's graph TB syntax to define the diagram, with classes defining node styles. The component renders the diagram as an SVG image within a container element.",
+        "items": [
+          {
+            "id": "0660536e-428f-d3a4-004d-f4efc46a86d9",
+            "ancestors": [],
+            "description": "Returns a JSX element that represents an interactive system architecture diagram. It includes a heading and a div that contains a Mermaid chart, which is defined by the `diagramDefinition` variable. The chart is rendered with default styles.",
+            "params": [],
+            "returns": {
+              "type_name": "ReactElement",
+              "description": "A JSX element representing a div with nested elements, including an h2 heading, a border-div containing a Mermaid chart, and some styling attributes."
+            },
+            "usage": {
+              "language": "typescript",
+              "code": "<InteractiveArchitectureDiagram />\n",
+              "description": ""
+            },
+            "name": "InteractiveArchitectureDiagram",
+            "location": {
+              "start": 70,
+              "insert": 70,
+              "offset": " ",
+              "indent": 0,
+              "comment": null
+            },
+            "item_type": "function",
+            "length": 10,
+            "docLength": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "updated-architecture-diagram.tsx",
+    "path": "diagrams/updated-architecture-diagram.tsx",
+    "content": {
+      "structured": {
+        "description": "An interactive architecture diagram component using React and Mermaid-react libraries. The component renders a graph-based visualization of a system's components and their relationships. The diagram is divided into four subgraphs representing frontend, backend, data storage, and external services.",
+        "items": [
+          {
+            "id": "44200b78-31d0-dbae-8e48-00f776acb408",
+            "ancestors": [],
+            "description": "Renders a system architecture diagram using the `Mermaid` component, with the diagram definition provided by the `diagramDefinition` prop. It also includes a heading and additional information about deployment on Vercel.",
+            "params": [],
+            "returns": {
+              "type_name": "JSX.Element",
+              "description": "A container element that wraps several other elements, including a heading, a Mermaid chart component, and a paragraph with an inline span element."
+            },
+            "usage": {
+              "language": "typescript",
+              "code": "const Diagram = <InteractiveArchitectureDiagram />;\n",
+              "description": "\n\nThis code creates an instance of InteractiveArchitectureDiagram and assigns it to a variable named \"Diagram\"."
+            },
+            "name": "InteractiveArchitectureDiagram",
+            "location": {
+              "start": 71,
+              "insert": 71,
+              "offset": " ",
+              "indent": 0,
+              "comment": null
+            },
+            "item_type": "function",
+            "length": 13,
+            "docLength": null
+          }
+        ]
+      }
+    }
   }
 ]
