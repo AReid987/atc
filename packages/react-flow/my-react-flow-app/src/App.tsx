@@ -18,6 +18,14 @@ const initialNodes = [
 ];
 const initialEdges = [{ id: 'e1-2', source: '1', target: '2' }];
 
+/**
+ * @description Initializes state for nodes and edges using the `useNodesState` and
+ * `useEdgesState` hooks. It defines a callback to handle edge connections and renders
+ * a ReactFlow component, which is controlled by the node and edge states and callbacks.
+ * 
+ * @returns {JSX.Element} A React component that contains a nested ReactFlow element
+ * with nodes, edges, controls, mini map and background elements.
+ */
 export default function App() {
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);

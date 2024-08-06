@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "version": "1",
+    "updated_at": "2024-08-05T22:13:55.704Z",
+    "created_at": "2024-08-05T20:26:51.453Z",
+    "pipelines": [
+      "27b3e9ce-df1e-41ba-bce0-1085577c67bb",
+      "1ea21ae2-a089-4dfb-a39d-46705af3d2c4"
+    ]
+  },
+  "lookup": [
+    [
+      "apps/project-showcase/.eslintrc.js",
+      "apps/project-showcase/src/app/page.tsx",
+      "apps/project-showcase/tailwind.config.ts",
+      "apps/web-main/.eslintrc.js",
+      "apps/web-main/src/app/page.tsx",
+      "apps/web-main/tailwind.config.ts",
+      "default-scope/ui/button/button.composition.tsx",
+      "default-scope/ui/button/button.spec.tsx",
+      "default-scope/ui/button/button.tsx",
+      "default-scope/ui/button/index.ts",
+      "packages/tailwind-config/tailwind.config.ts",
+      "apps/web-main/components/page.tsx",
+      "packages/react-flow/my-react-flow-app/src/App.tsx",
+      "packages/react-flow/my-react-flow-app/src/main.tsx",
+      "packages/react-flow/my-react-flow-app/src/vite-env.d.ts",
+      "packages/react-flow/my-react-flow-app/vite.config.ts"
+    ]
+  ]
+}

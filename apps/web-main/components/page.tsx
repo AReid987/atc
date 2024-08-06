@@ -98,6 +98,16 @@ const model = new DiagramModel();
 model.addAll(node1, node2, link);
 engine.setModel(model);
 
+/**
+ * @description Renders a React component, consisting of a heading "System Architecture"
+ * and a `<div>` element containing a `<CanvasWidget>`. The `CanvasWidget` receives
+ * an `engine` prop, which is not defined within the code snippet.
+ * 
+ * @returns {JSX.Element} A React component that represents a hierarchical view of
+ * the system architecture. The returned element consists of three child elements:
+ * an h1 heading and two div elements with specific styles and a CanvasWidget element
+ * inside one of them.
+ */
 export default function ArchitectureDiagramPage() {
   return (
     <div className='h-96'>

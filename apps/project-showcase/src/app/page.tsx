@@ -1,5 +1,14 @@
 import Image from "next/image";
 
+/**
+ * @description Renders a main page for a Next.js application, featuring a gradient
+ * background, a call to action to edit a file, and links to documentation, learning
+ * resources, templates, and deployment options.
+ * 
+ * @returns {JSX.Element} A React component that represents a main section of the
+ * page containing various elements such as text, images, and links with gradient
+ * backgrounds and animations.
+ */
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">

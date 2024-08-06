@@ -1,0 +1,352 @@
+[
+  {
+    "name": ".eslintrc.js",
+    "path": "apps/project-showcase/.eslintrc.js",
+    "content": {
+      "structured": {
+        "description": "An ESLint configuration file that specifies settings for a Next.js project. It extends a previously defined configuration and sets the parser to \"@typescript-eslint/parser\", which allows for type-safe parsing of TypeScript files. The \"project\" option is enabled, indicating that the parser should consider the entire project's structure while parsing.",
+        "items": []
+      }
+    }
+  },
+  {
+    "name": "page.tsx",
+    "path": "apps/project-showcase/src/app/page.tsx",
+    "content": {
+      "structured": {
+        "description": "A Next.js application with a custom home page that displays a header section and a grid of links at the bottom. The code uses React components and CSS classes to style the layout and content. It also incorporates the \"next/image\" package for image rendering and Vercel's logo and icons.",
+        "items": [
+          {
+            "id": "bad09b1f-e145-e69a-d543-c10fc0e6c59c",
+            "ancestors": [],
+            "description": "Renders a main page for a Next.js application, featuring a gradient background, a call to action to edit a file, and links to documentation, learning resources, templates, and deployment options.",
+            "params": [],
+            "returns": {
+              "type_name": "JSX.Element",
+              "description": "A React component that represents a main section of the page containing various elements such as text, images, and links with gradient backgrounds and animations."
+            },
+            "usage": null,
+            "name": "Home",
+            "location": {
+              "start": 3,
+              "insert": 3,
+              "offset": " ",
+              "indent": 0,
+              "comment": null
+            },
+            "item_type": "function",
+            "length": 111,
+            "docLength": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "tailwind.config.ts",
+    "path": "apps/project-showcase/tailwind.config.ts",
+    "content": {
+      "structured": {
+        "description": "A Tailwind CSS configuration. It imports shared configuration from another package and merges it with local settings. The content option specifies the files that should be processed for classes and utilities, while presets allows overriding or extending base configurations.",
+        "items": []
+      }
+    }
+  },
+  {
+    "name": ".eslintrc.js",
+    "path": "apps/web-main/.eslintrc.js",
+    "content": {
+      "structured": {
+        "description": "An ESLint configuration file. It sets the root directory as true and extends a predefined config from a repository called \"@repo/eslint-config/next.js\". The parser is set to \"@typescript-eslint/parser\", which allows TypeScript syntax parsing, and project settings are enabled through the \"project\" option in parserOptions.",
+        "items": []
+      }
+    }
+  },
+  {
+    "name": "page.tsx",
+    "path": "apps/web-main/src/app/page.tsx",
+    "content": {
+      "structured": {
+        "description": "A React component named \"Home\" that renders an ArchitectureDiagramPage component within a main element. The main element is styled using className with various properties such as flex layout, minimum height, padding, and justification. The ArchitectureDiagramPage component is imported from a components/page directory.",
+        "items": [
+          {
+            "id": "410aaaf9-e30a-249a-154d-e66b4784d6c9",
+            "ancestors": [],
+            "description": "Renders a main HTML element with a flexible layout, centered vertically and horizontally, containing an `ArchitectureDiagramPage`. It is likely used as an entry point for a React application and serves as a container for other components.",
+            "params": [],
+            "returns": {
+              "type_name": "ReactElement",
+              "description": "A JSX element representing a main HTML element with specific attributes and children."
+            },
+            "usage": {
+              "language": "typescript",
+              "code": "<Home />\n",
+              "description": ""
+            },
+            "name": "Home",
+            "location": {
+              "start": 3,
+              "insert": 3,
+              "offset": " ",
+              "indent": 0,
+              "comment": null
+            },
+            "item_type": "function",
+            "length": 8,
+            "docLength": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "tailwind.config.ts",
+    "path": "apps/web-main/tailwind.config.ts",
+    "content": {
+      "structured": {
+        "description": "A Tailwind CSS configuration. It imports a shared config from a separate file and extends it with additional content directories for the application's source code. The resulting config is then exported as the default config. This config is used by Tailwind to generate its CSS styles.",
+        "items": []
+      }
+    }
+  },
+  {
+    "name": "button.composition.tsx",
+    "path": "default-scope/ui/button/button.composition.tsx",
+    "content": {
+      "structured": {
+        "description": "and exports a basic React component named BasicButton. The component imports and utilizes Button components from the './button.js' file. When rendered, it displays a \"hello world!\" label wrapped in a Button element.",
+        "items": [
+          {
+            "id": "a9cf7102-868d-c697-b746-1171d092adb9",
+            "ancestors": [],
+            "description": "Renders a basic button with the text \"hello world!\". It returns JSX (JavaScript XML) that consists of a `<Button>` element, which is presumably defined elsewhere in the codebase. The exact behavior and styling of the button depend on the implementation of the `Button` component.",
+            "params": [],
+            "returns": {
+              "type_name": "ReactNode",
+              "description": "A JSX element, specifically a `<Button>` component with the text \"hello world!\" as its content."
+            },
+            "usage": {
+              "language": "typescript",
+              "code": "const App = () => {\n  return (\n    <div>\n      <BasicButton />\n    </div>\n  );\n};\n",
+              "description": "\nThis code renders a basic button with text \"hello world!\" within a div."
+            },
+            "name": "BasicButton",
+            "location": {
+              "start": 3,
+              "insert": 3,
+              "offset": " ",
+              "indent": 0,
+              "comment": null
+            },
+            "item_type": "function",
+            "length": 5,
+            "docLength": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "button.spec.tsx",
+    "path": "default-scope/ui/button/button.spec.tsx",
+    "content": {
+      "structured": {
+        "description": "A test case for a React component using Jest and React Testing Library. The test renders a BasicButton component and checks if it contains the text \"hello world!\". The render method from React Testing Library is used to render the component, and the getByText method is used to retrieve the element containing the specified text.",
+        "items": [
+          {
+            "id": "38a3ef97-95b4-9aba-b64c-6ec19453c2f8",
+            "ancestors": [],
+            "description": "Renders and tests UI component.",
+            "name": null,
+            "location": {
+              "start": 5,
+              "insert": 6,
+              "offset": " ",
+              "indent": 2,
+              "comment": null
+            },
+            "item_type": "higher_order_invocation",
+            "length": 5,
+            "docLength": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "button.tsx",
+    "path": "default-scope/ui/button/button.tsx",
+    "content": {
+      "structured": {
+        "description": "A reusable button component using React. The ButtonProps type specifies optional children properties that can be passed as ReactNode. The Button function receives these props and returns a div element containing the provided children. This allows for dynamic content rendering within the button component.",
+        "items": [
+          {
+            "id": "70342ef8-823f-2080-8044-1b3b8e0b4527",
+            "ancestors": [],
+            "description": "Takes a `children` prop, which can be any JSX element or text, and returns a `div` container with that content. This allows developers to create reusable button components with varying content.",
+            "params": [
+              {
+                "name": "obj",
+                "default_value": null,
+                "optional": false,
+                "type_name": "object",
+                "description": "Destructured to extract its key-value pair, where the value is assigned to the variable `children`."
+              },
+              {
+                "name": "obj.children",
+                "default_value": null,
+                "optional": false,
+                "type_name": "ButtonProps",
+                "description": "Intended to hold content within the button."
+              }
+            ],
+            "returns": {
+              "type_name": "ReactNode",
+              "description": "Wrapped inside a `<div>` element."
+            },
+            "usage": {
+              "language": "typescript",
+              "code": "<Button>Hello, World!</Button>\n",
+              "description": ""
+            },
+            "name": "Button",
+            "location": {
+              "start": 10,
+              "insert": 10,
+              "offset": " ",
+              "indent": 0,
+              "comment": null
+            },
+            "item_type": "function",
+            "length": 7,
+            "docLength": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "index.ts",
+    "path": "default-scope/ui/button/index.ts",
+    "content": {
+      "structured": {
+        "description": "And exports two entities: Button and ButtonProps. It appears that Button is a UI component while ButtonProps represents its properties. The export statement makes these entities accessible to other parts of the application or library.",
+        "items": []
+      }
+    }
+  },
+  {
+    "name": "tailwind.config.ts",
+    "path": "packages/tailwind-config/tailwind.config.ts",
+    "content": {
+      "structured": {
+        "description": "A shared configuration for Tailwind CSS. The configuration extends the theme with custom colors and background images. It also initializes plugins array, which is currently empty. The configuration does not include any content configurations, allowing each package to be responsible for its own content.",
+        "items": []
+      }
+    }
+  },
+  {
+    "name": "page.tsx",
+    "path": "apps/web-main/components/page.tsx",
+    "content": {
+      "structured": {
+        "description": "A system architecture diagram using the React Diagrams library. It creates a graph with multiple subgraphs representing different components of a system, including frontend, backend, data storage, and external services. The diagram uses nodes and links to represent relationships between these components, with custom colors and labels applied to each node and link.",
+        "items": [
+          {
+            "id": "f6d6bf68-8908-af8c-384e-76a0936aba88",
+            "ancestors": [],
+            "description": "Renders a React component, consisting of a heading \"System Architecture\" and a `<div>` element containing a `<CanvasWidget>`. The `CanvasWidget` receives an `engine` prop, which is not defined within the code snippet.",
+            "params": [],
+            "returns": {
+              "type_name": "JSX.Element",
+              "description": "A React component that represents a hierarchical view of the system architecture. The returned element consists of three child elements: an h1 heading and two div elements with specific styles and a CanvasWidget element inside one of them."
+            },
+            "usage": {
+              "language": "typescript",
+              "code": "const engine = new Engine();\n<ArchitectureDiagramPage engine={engine} />;\n",
+              "description": ""
+            },
+            "name": "ArchitectureDiagramPage",
+            "location": {
+              "start": 101,
+              "insert": 101,
+              "offset": " ",
+              "indent": 0,
+              "comment": null
+            },
+            "item_type": "function",
+            "length": 10,
+            "docLength": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "App.tsx",
+    "path": "packages/react-flow/my-react-flow-app/src/App.tsx",
+    "content": {
+      "structured": {
+        "description": "A React application using the `@xyflow/react` package for creating a flowchart editor. The app initializes with two nodes and one edge and provides controls for users to create new edges and modify existing ones.",
+        "items": [
+          {
+            "id": "db20ead5-1edb-f189-3745-5692044f9a86",
+            "ancestors": [],
+            "description": "Initializes state for nodes and edges using the `useNodesState` and `useEdgesState` hooks. It defines a callback to handle edge connections and renders a ReactFlow component, which is controlled by the node and edge states and callbacks.",
+            "params": [],
+            "returns": {
+              "type_name": "JSX.Element",
+              "description": "A React component that contains a nested ReactFlow element with nodes, edges, controls, mini map and background elements."
+            },
+            "usage": {
+              "language": "typescript",
+              "code": "const App = require('./App');\n\nconst nodes = [\n  { id: '1', type: 'input' },\n  { id: '2', type: 'output' }\n];\n\nconst edges = [];\n\nReactDom.render(<App initialNodes={nodes} initialEdges={edges}/>, document.getElementById('root'));",
+              "description": ""
+            },
+            "name": "App",
+            "location": {
+              "start": 21,
+              "insert": 21,
+              "offset": " ",
+              "indent": 0,
+              "comment": null
+            },
+            "item_type": "function",
+            "length": 25,
+            "docLength": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "main.tsx",
+    "path": "packages/react-flow/my-react-flow-app/src/main.tsx",
+    "content": {
+      "structured": {
+        "description": "And renders a React application using JSX syntax. It imports necessary modules from React and ReactDOM, then uses createRoot to render the App component in an element with the id \"root\". The App component is wrapped in a StrictMode component for development mode.",
+        "items": []
+      }
+    }
+  },
+  {
+    "name": "vite-env.d.ts",
+    "path": "packages/react-flow/my-react-flow-app/src/vite-env.d.ts",
+    "content": {
+      "structured": {
+        "description": "A Vite client configuration. It establishes dependencies for the project by referencing the `vite/client` type definitions. This allows the use of Vite's features and APIs in the project. The configuration enables the integration of Vite with the TypeScript compiler.",
+        "items": []
+      }
+    }
+  },
+  {
+    "name": "vite.config.ts",
+    "path": "packages/react-flow/my-react-flow-app/vite.config.ts",
+    "content": {
+      "structured": {
+        "description": "Vite configuration for a React application. It uses the `defineConfig` function from `vite` and the `react` plugin from `@vitejs/plugin-react-swc` to configure the build process. The `plugins` option is used to specify the plugins to be used during the build, in this case only the `react` plugin which enables React support for Vite.",
+        "items": []
+      }
+    }
+  }
+]
