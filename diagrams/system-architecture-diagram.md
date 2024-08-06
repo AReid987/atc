@@ -1,3 +1,5 @@
+# Mermaid System Architecture
+
 ```mermaid
     graph TB
         subgraph "Frontend"
